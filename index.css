@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.holder {
+  margin: 150px auto 0;
+  width: 328px;
+  height: 536px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.mockup {
+  height: 120px;
+  position: relative;
+}
+
+.mockup div {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.illustration-woman {
+  width: 239px;
+  height: 181px;
+  background-image: url(images/illustration-woman-online-mobile.svg);
+  top: -110px;
+  left: 44px;
+}
+
+.bg-pattern {
+  width: 240px;
+  height: 104px;
+  background-image: url(images/bg-pattern-mobile.svg);
+  top: -4px;
+  left: 44px;
+}
+
+.accordion-button:focus {
+  background-color: transparent;
+  box-shadow: 0 0;
+}
+
+.accordion h1 {
+  margin: 12px 0;
+  font-size: 31px;
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.accordion-button {
+  font-size: 13px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  letter-spacing: 0.1px;
+}
+
+.accordion-button::after {
+  margin-top: 5px;
+  margin-right: 2px;
+  width: 12px;
+  height: 7px;
+  background-image: url(images/icon-arrow-down.svg);
+  background-size: contain;
+}
+
+.accordion-button:not(.collapsed) {
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+  background-color: transparent;
+  box-shadow: 0 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(images/icon-arrow-down.svg);
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-item {
+  position: relative;
+}
+
+.accordion-item::after {
+  position: absolute;
+  content: "";
+  width: 86%;
+  border-bottom: solid 0.5px hsl(240, 5%, 91%);
+  background-color: black;
+  opacity: 0.3;
+  bottom: -6px;
+  left: 7%;
+  z-index: 1;
+}
+
+.accordion-header {
+  height: 50px;
+}
+
+.accordion-body {
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+  padding: 0 35px 13px 24px;
+}
+
+.attribution {
+  padding: 15px 0;
+  font-size: 11px;
+  text-align: center;
+  color: hsl(240, 5%, 91%);
+}
+
+.attribution a {
+  color: hsl(240, 5%, 91%);
+}
+
+/*start desktop adjust.*/
+@media only screen and (min-width:1440px) {
+  body{
+    min-height: 639px;
+  }
+  .holder {
+    margin-top: 129px;
+    width: 876px;
+    height: 508px;
+    display: flex;
+    position: relative;
+  }
+
+  .mockup {
+    width: 595px;
+    height: 508px;
+    overflow: hidden;
+  }
+
+  .illustration-box {
+    position: absolute;
+    width: 191px;
+    height: 184px;
+    background-image: url(images/illustration-box-desktop.svg);
+    top: 204px;
+    left: -94px;
+    z-index: 1;
+  }
+
+  .illustration-woman {
+    width: 472px;
+    height: 359px;
+    background-image: url(images/illustration-woman-online-desktop.svg);
+    top: 68px;
+    left: -85px;
+  }
+
+  .bg-pattern {
+    width: 966px;
+    height: 945px;
+    background-image: url(images/bg-pattern-desktop.svg);
+    top: -294px;
+    left: -580px;
+  }
+
+  .accordion {
+    padding: 53px 50px 0 0;
+    width: 547px;
+  }
+
+  .accordion h1 {
+    text-align: left;
+    padding-left: 24px;
+    margin-bottom: 20px;
+  }
+
+  .accordion-button {
+    font-size: 14px;
+  }
+}
+
+/*end desktop adjust.*/
